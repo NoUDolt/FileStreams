@@ -60,7 +60,7 @@ public class RandProductMaker {
         panel.add(recordCount);
 
         addButton.addActionListener(e -> {
-            try (RandomAccessFile raf = new RandomAccessFile("ProductData.txt", "rw")) {
+            try (RandomAccessFile raf = new RandomAccessFile("ProductData.dat", "rw")) {
                 raf.seek(raf.length()); // Move to the end of the file
 
                 String id = Product.padString(idText.getText(), 6);

@@ -41,7 +41,7 @@ public class RandProductSearch {
             String query = searchText.getText().trim().toLowerCase();
             resultArea.setText("");
 
-            try (RandomAccessFile raf = new RandomAccessFile("ProductData.txt", "r")) {
+            try (RandomAccessFile raf = new RandomAccessFile("ProductData.dat", "r")) {
                 ArrayList<String> results = new ArrayList<>();
                 while (raf.getFilePointer() < raf.length()) {
                     String id = Product.readFixedString(raf, 6);
