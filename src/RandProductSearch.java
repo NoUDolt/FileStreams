@@ -8,7 +8,7 @@ public class RandProductSearch {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Product Search");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 400);
+        frame.setSize(950, 750);
 
         JPanel panel = new JPanel();
         frame.add(panel);
@@ -29,12 +29,12 @@ public class RandProductSearch {
         panel.add(searchText);
 
         JTextArea resultArea = new JTextArea();
-        resultArea.setBounds(10, 60, 560, 280);
+        resultArea.setBounds(10, 60, 760, 480);
         resultArea.setEditable(false);
         panel.add(resultArea);
 
         JButton searchButton = new JButton("Search");
-        searchButton.setBounds(10, 350, 100, 25);
+        searchButton.setBounds(10, 550, 100, 25);
         panel.add(searchButton);
 
         searchButton.addActionListener(e -> {
